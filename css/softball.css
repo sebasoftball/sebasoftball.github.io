@@ -1,0 +1,388 @@
+/* CSS Document */
+	body { 
+		background: #f7f7f7;
+		font-family:"Times New Roman", Times, serif;
+		font-size:100%;
+		margin: 0;
+    	padding: 0;
+	}
+	ul {
+		margin: 0;
+	}
+	h1 {
+		text-align: center;
+		font-size: 4em;
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+	h1:before, h1:after {
+		content: url("../images/baseball.gif");
+	}
+	h2 {
+		color:#3366FF;
+	}
+
+	header.section-header {
+		background: -webkit-gradient(radial, center center, 0, center center, 460, from(#5c5c5c), to(#1f1f1f));
+    	background: -webkit-radial-gradient(circle, #5c5c5c, #1f1f1f);
+    	background: -moz-radial-gradient(circle, #5c5c5c, #1f1f1f);
+    	background: -ms-radial-gradient(circle, #5c5c5c, #1f1f1f);
+		position: fixed;
+		display: block;
+		width: 100%;
+		z-index: 9999;
+		left: 0;
+		top: 0;
+	}
+	.section-header__main {
+		margin: 0 auto;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-right: 27.2px;
+		padding-left: 27.2px;
+		color: white;
+	}
+	h2.section-header__title {
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 20px;
+		padding-top: 1.25rem;
+		padding-bottom: 20px;
+		padding-bottom: 1.25rem;
+		font-size: 1.65rem;
+		font-style: normal;
+	}
+	h2.section-header__title a {
+		text-decoration: none;
+		border-bottom: 0;
+		color: white;
+	}
+	iframe.schedule {
+		width: 100%;
+		height: 600px;
+	}
+	iframe.standings {
+		width: 100%;
+		height: 300px;
+	}
+
+	ul#menubar {
+		background: inherit;
+		max-width: 1200px;
+		margin: 0 auto;
+    	padding: 0;
+        list-style: none;
+	}
+	ul#menubar li {
+		width: 110px;
+		height: 20px;
+		padding-left: 24.75px;
+		padding-right: 24.75px;
+		padding-top: 8px; 
+		padding-bottom: 8px;
+		border-radius: 2px;
+		background-color: transparent;
+		position: relative;
+		display: inline-block;
+    	text-decoration: none;
+    	color: #ffffff;
+        line-height: 21px;
+        text-align: left; 
+	}
+	ul#menubar li:after {
+		content: "\25BF";
+	}
+	ul#menubar li:hover, ul#menubar li ul.dropdown li a:hover {
+    	background-color: #828282;
+    	color: #000000; 
+	}
+	ul#menubar li ul.dropdown {
+    	background-color: #5c5c5c;
+    	color: #ffffff;
+    	text-decoration: none;
+		min-width: 100%; /* Set width of the dropdown */
+        display: none;d
+		text-align: left;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+		padding: 0;
+		border-radius: 2px;
+	}
+	ul#menubar li:hover ul.dropdown {
+		display: block;
+	}
+	ul#menubar li ul.dropdown li {
+		padding: 0;
+		border-radius: 2px;
+		min-width: 100%;
+		height: 100%;
+		display: block;
+	}
+	ul#menubar li ul.dropdown li:after {
+		content: none;
+	}
+	ul#menubar li ul.dropdown li a {
+		padding-left: 24.75px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100%;
+		height: 100%;
+		background-color: #5c5c5c;
+		color: #ffffff;
+		text-align: left;
+		text-decoration: none;
+		border-bottom: 0;
+		display: block;
+	}
+
+	#MainContent {
+		position: relative;
+		top: 121px;
+		left: 0;
+		display:block;
+		margin: auto;
+		max-width: 1000px;
+	}
+
+	.SeasonHeader {
+		text-align:left;
+		font-size:3em;
+		color:blue;
+		font-weight:bold;
+	}
+
+	table.contacts {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		border: 2px black solid;
+		border-collapse: collapse;
+	}
+	table.contacts tr th {
+		border: 2px solid black;
+		padding: 1em;
+		font: 1.5em;
+		color: white;
+		font-weight: bold;
+		background-color: #1f1f1f;
+	}
+	table.contacts tr td {
+		border: 2px solid black;
+		padding: 1em;
+	}
+	table.contacts tr:nth-child(even){background-color: #f2f2f2;}
+
+	p.question {
+		margin-left: 1em;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	p.answer {
+		margin-top: 1px;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	a {
+		border-bottom:1px dashed #6633CC;
+	}
+	
+	a:hover {
+		border-bottom:0;
+		text-decoration:underline;
+		color:#6699FF;
+	}
+	
+	#PreviousYears {
+		/* No Declarations.  Just here for Print format CSS to override. */
+	}
+	
+	.Umpire {
+		font-style:italic;
+	}
+
+	.Winner {
+		font-weight:bold;
+	}
+		
+	.question {
+		font-weight:bold;
+	}
+	
+	.postponed {
+		color:red;
+		font-style:italic;
+	}
+	
+	.doubleheader {
+		color:green;
+		font-style:italic;
+	}
+	
+	.superscript {
+		vertical-align:super;
+	}
+	
+	#Schedule table tr th {
+		background:white;
+		font-weight:bold;
+		text-align:center;
+	}
+	
+	#Schedule tr {
+		text-align:center;
+	}	
+
+	#Schedule tr.Monday {
+		background:#c2c2d6;
+	}	
+	
+	#Schedule tr.Tuesday {
+		background:#ffffb3;
+	}	
+	
+	#Schedule tr.Wednesday {
+		background:#c2c2d6;
+	}	
+	
+	#Schedule tr.Thursday {
+		background:#b3c6ff;
+	}
+	
+	#Champion {
+		border-left:black 6px outset;
+		border-right:black 6px outset;
+		border-bottom:orange 6px outset;
+		border-top:orange 6px outset;
+		width:85%;
+		margin-bottom:2em;
+		margin-right:5%;
+		float:left;
+		text-align:center;
+	}
+	
+	#Champion span {
+	}
+
+	#Champion ol.standings {
+	}
+	
+	
+	#ThisWeek {
+		border:red 6px outset;
+		width:60%;
+		margin-bottom:2em;
+		margin-right:5%;
+		float:left;
+	}
+	
+	#ThisWeek h3 {
+		text-align:center;
+	}
+	
+	#ThisWeek ul {
+		list-style:none;
+	}
+	
+	#ThisWeek ul li {
+		font-weight:bold;
+		padding-bottom:1em;
+	}
+	
+	#ThisWeek ul li ul li {
+		font-weight:normal;
+		padding-bottom:.5em;
+	}
+	
+	.field {
+		font-style:italic;
+	}
+
+	#July4 {
+		text-align:center;
+		vertical-align:baseline;
+		background-color:#FFCC99;
+	}
+	
+	#TournamentSaturday {
+		text-align:center;
+		background-color:#9FE1B0;
+	}
+
+	#TournamentSaturdayRain {
+		text-align:center;
+		background-color:#9FE1B0;
+	}
+
+	#Tournament {
+		border:blue 6px outset;
+		width:30%;
+		padding-left:1em;
+		margin-bottom:2em;
+		float:left;
+	}
+	
+	.TournamentHeadline {
+		padding-left:1em;
+		font-size:1.5em;
+		color:Purple;
+		font-weight:bold;
+	}
+	
+	.TournamentChampion {
+		padding-left:1em;
+		font-size:3em;
+		color:Purple;
+		font-weight:bold;
+		text-align:center;
+	}
+	
+	.TournamentChampionArchive {
+		font-size:1.5em;
+		color:Purple;
+		font-weight:bold;
+	}
+
+	.SeasonChampionArchive {
+		font-size:1em;
+		color:Purple;
+		font-weight:bold;
+	}
+
+	#Tournament h3 {
+		text-align:center;
+	}
+	
+	#Tournament p {
+		padding-bottom:.5em;
+	}
+
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  #leftnav {padding-top: 15px;}
+	  #leftnav a {font-size: 18px;}
+	}
+	
+	#MainContent div.SeasonArticleHeader {
+		font-size:1.3em;
+		font-weight:bold;
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+	
+	#MainContent p.SeasonArticle {
+		margin-left:15px;
+	}
+	
+	table caption {
+		font-weight:bold;
+		color:#FF0000;
+	}
+
+	.smallw {
+		font-size: 75%;
+		float: right;
+		margin: 2px;
+	}

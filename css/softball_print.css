@@ -1,0 +1,21 @@
+/* CSS Document */
+
+	#LeftCol {
+		display:none;
+	}
+
+	#PreviousYears {
+		display:none;
+	}
+
+	.NoPrint {
+		display:none;
+	}
+	
+	#Schedule tr.Tuesday {
+		background:white;
+	}	
+	
+	#Schedule tr.Thursday {
+		background:white;
+	}
